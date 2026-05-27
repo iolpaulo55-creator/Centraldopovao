@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Central do Povão • Inhambupe-BA</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,17 +30,17 @@
     }
 
     body{
+
       font-family:'Inter',sans-serif;
 
       background:
-      radial-gradient(circle at top right, rgba(255,122,0,0.12), transparent 25%),
+      radial-gradient(circle at top right, rgba(255,122,0,0.10), transparent 25%),
       radial-gradient(circle at left, rgba(255,45,120,0.08), transparent 20%),
       var(--bg);
 
       color:var(--text);
 
       overflow-x:hidden;
-      min-height:100vh;
     }
 
     .container{
@@ -49,9 +49,13 @@
     }
 
     header{
+
       position:fixed;
+
       top:0;
+
       width:100%;
+
       z-index:1000;
 
       backdrop-filter:blur(18px);
@@ -62,34 +66,45 @@
     }
 
     .navbar{
+
       height:82px;
 
       display:flex;
+
       align-items:center;
+
       justify-content:space-between;
     }
 
     .logo{
+
       font-size:28px;
+
       font-weight:900;
 
       background:
       linear-gradient(135deg,var(--primary),var(--secondary));
 
       -webkit-background-clip:text;
+
       -webkit-text-fill-color:transparent;
     }
 
     .location{
+
       color:var(--muted);
+
       font-weight:600;
+
       font-size:14px;
     }
 
     .hero{
+
       min-height:100vh;
 
       display:flex;
+
       align-items:center;
     }
 
@@ -98,8 +113,11 @@
     }
 
     .badge{
+
       display:inline-flex;
+
       align-items:center;
+
       gap:10px;
 
       padding:12px 18px;
@@ -120,6 +138,7 @@
     }
 
     .hero h1{
+
       font-size:clamp(58px,9vw,100px);
 
       line-height:0.92;
@@ -130,14 +149,17 @@
     }
 
     .hero h1 span{
+
       background:
       linear-gradient(135deg,var(--primary),var(--secondary));
 
       -webkit-background-clip:text;
+
       -webkit-text-fill-color:transparent;
     }
 
     .hero p{
+
       color:var(--muted);
 
       font-size:20px;
@@ -149,16 +171,83 @@
       margin-bottom:55px;
     }
 
+    .trending{
+
+      padding:40px 0;
+    }
+
+    .trending-header{
+
+      margin-bottom:25px;
+    }
+
+    .trending-header h2{
+
+      font-size:38px;
+
+      margin-bottom:10px;
+    }
+
+    .trending-header p{
+
+      color:var(--muted);
+    }
+
+    .trending-cards{
+
+      display:flex;
+
+      gap:18px;
+
+      overflow-x:auto;
+
+      padding-bottom:10px;
+    }
+
+    .trending-card{
+
+      min-width:260px;
+
+      background:rgba(255,255,255,0.04);
+
+      border:1px solid rgba(255,255,255,0.06);
+
+      border-radius:24px;
+
+      padding:20px;
+
+      transition:0.3s;
+    }
+
+    .trending-card:hover{
+
+      transform:translateY(-5px);
+    }
+
+    .trending-card h3{
+
+      margin-bottom:10px;
+    }
+
+    .trending-card p{
+
+      color:var(--muted);
+    }
+
     .cards{
+
       display:grid;
 
       grid-template-columns:
       repeat(auto-fit,minmax(280px,1fr));
 
       gap:24px;
+
+      padding-bottom:60px;
     }
 
     .card{
+
       background:rgba(16,19,27,0.92);
 
       border:1px solid var(--border);
@@ -179,11 +268,14 @@
     }
 
     .card.show{
+
       transform:translateY(0);
+
       opacity:1;
     }
 
     .card:hover{
+
       transform:translateY(-10px);
 
       border-color:rgba(255,122,0,0.14);
@@ -193,12 +285,16 @@
     }
 
     .card img{
+
       width:100%;
+
       height:220px;
+
       object-fit:cover;
     }
 
     .tag{
+
       position:absolute;
 
       top:18px;
@@ -219,15 +315,19 @@
     }
 
     .card-content{
+
       padding:26px;
     }
 
     .card h3{
+
       font-size:28px;
+
       margin-bottom:12px;
     }
 
     .price{
+
       font-size:34px;
 
       font-weight:900;
@@ -238,6 +338,7 @@
     }
 
     .description{
+
       color:var(--muted);
 
       line-height:1.7;
@@ -246,6 +347,7 @@
     }
 
     .card button{
+
       width:100%;
 
       height:56px;
@@ -267,11 +369,282 @@
     }
 
     .card button:hover{
+
       transform:scale(1.02);
     }
 
+    .creator{
+
+      padding:80px 0;
+    }
+
+    .creator-box{
+
+      background:
+      linear-gradient(
+      135deg,
+      rgba(255,122,0,0.12),
+      rgba(255,45,120,0.08)
+      );
+
+      border:1px solid rgba(255,255,255,0.06);
+
+      border-radius:36px;
+
+      padding:50px;
+    }
+
+    .creator-photo{
+
+      width:120px;
+
+      height:120px;
+
+      border-radius:50%;
+
+      overflow:hidden;
+
+      margin-bottom:25px;
+
+      border:3px solid rgba(255,255,255,0.08);
+
+      box-shadow:
+      0 15px 40px rgba(0,0,0,0.35);
+    }
+
+    .creator-photo img{
+
+      width:100%;
+
+      height:100%;
+
+      object-fit:cover;
+    }
+
+    .creator-badge{
+
+      display:inline-block;
+
+      padding:10px 15px;
+
+      border-radius:999px;
+
+      background:rgba(255,255,255,0.06);
+
+      margin-bottom:25px;
+
+      font-size:12px;
+
+      font-weight:800;
+
+      letter-spacing:1px;
+    }
+
+    .creator-box h2{
+
+      font-size:52px;
+
+      margin-bottom:20px;
+    }
+
+    .creator-description{
+
+      color:var(--muted);
+
+      line-height:1.9;
+
+      max-width:700px;
+
+      margin-bottom:35px;
+
+      font-size:18px;
+    }
+
+    .contact-btn{
+
+      height:60px;
+
+      padding:0 28px;
+
+      border:none;
+
+      border-radius:18px;
+
+      background:
+      linear-gradient(
+      135deg,
+      var(--primary),
+      var(--secondary)
+      );
+
+      color:white;
+
+      font-weight:800;
+
+      cursor:pointer;
+
+      transition:0.3s;
+    }
+
+    .contact-btn:hover{
+
+      transform:scale(1.03);
+    }
+
+    .chatbot{
+
+      position:fixed;
+
+      right:25px;
+      bottom:25px;
+
+      width:360px;
+
+      background:#0f1118;
+
+      border:1px solid rgba(255,255,255,0.08);
+
+      border-radius:28px;
+
+      overflow:hidden;
+
+      display:none;
+
+      z-index:9999;
+
+      box-shadow:
+      0 30px 80px rgba(0,0,0,0.45);
+    }
+
+    .chat-header{
+
+      height:70px;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:space-between;
+
+      padding:0 20px;
+
+      border-bottom:1px solid rgba(255,255,255,0.06);
+
+      font-weight:800;
+    }
+
+    .chat-header button{
+
+      background:none;
+
+      border:none;
+
+      color:white;
+
+      font-size:18px;
+
+      cursor:pointer;
+    }
+
+    .chat-body{
+
+      height:350px;
+
+      overflow-y:auto;
+
+      padding:20px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      gap:15px;
+    }
+
+    .bot-message,
+    .user-message{
+
+      padding:14px 18px;
+
+      border-radius:18px;
+
+      line-height:1.6;
+
+      max-width:85%;
+    }
+
+    .bot-message{
+
+      background:rgba(255,255,255,0.05);
+
+      align-self:flex-start;
+    }
+
+    .user-message{
+
+      background:
+      linear-gradient(
+      135deg,
+      var(--primary),
+      var(--secondary)
+      );
+
+      align-self:flex-end;
+    }
+
+    .chat-input{
+
+      display:flex;
+
+      gap:10px;
+
+      padding:15px;
+
+      border-top:1px solid rgba(255,255,255,0.06);
+    }
+
+    .chat-input input{
+
+      flex:1;
+
+      height:52px;
+
+      border:none;
+
+      outline:none;
+
+      border-radius:14px;
+
+      background:rgba(255,255,255,0.05);
+
+      padding:0 15px;
+
+      color:white;
+    }
+
+    .chat-input button{
+
+      width:90px;
+
+      border:none;
+
+      border-radius:14px;
+
+      background:
+      linear-gradient(
+      135deg,
+      var(--primary),
+      var(--secondary)
+      );
+
+      color:white;
+
+      font-weight:700;
+
+      cursor:pointer;
+    }
+
     footer{
-      margin-top:120px;
 
       border-top:1px solid rgba(255,255,255,0.05);
 
@@ -280,44 +653,46 @@
       color:var(--muted);
     }
 
-    .footer-content{
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:20px;
-    }
-
-    @media(max-width:900px){
-
-      .hero{
-        padding-top:120px;
-      }
-
-      .hero h1{
-        font-size:62px;
-        letter-spacing:-2px;
-      }
-
-    }
-
     @media(max-width:600px){
 
       .hero{
+
         min-height:auto;
+
         padding:120px 0 70px;
       }
 
       .hero h1{
+
         font-size:48px;
       }
 
       .hero p{
+
         font-size:17px;
+      }
+
+      .chatbot{
+
+        width:92%;
+
+        right:4%;
+      }
+
+      .creator-box{
+
+        padding:35px;
+      }
+
+      .creator-box h2{
+
+        font-size:38px;
       }
 
     }
 
   </style>
+
 </head>
 <body>
 
@@ -353,13 +728,43 @@
       Promoções, delivery e oportunidades locais em uma plataforma moderna, inteligente e feita para Inhambupe-BA.
     </p>
 
+  </div>
+
+</section>
+
+<section class="trending">
+
+  <div class="container">
+
+    <div class="trending-header">
+
+      <h2>
+        🔥 Mais acessados em Inhambupe
+      </h2>
+
+      <p>
+        O algoritmo aprende automaticamente com os usuários.
+      </p>
+
+    </div>
+
+    <div class="trending-cards" id="trendingCards"></div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
     <div class="cards">
 
-      <div class="card" data-type="delivery">
+      <!-- CARDS -->
 
-        <div class="tag">
-          DELIVERY
-        </div>
+      <div class="card">
+
+        <div class="tag">DELIVERY</div>
 
         <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
 
@@ -367,15 +772,13 @@
 
           <h3>Brasa Burguer</h3>
 
-          <div class="price">
-            R$ 9,99
-          </div>
+          <div class="price">R$ 9,99</div>
 
           <div class="description">
             Hambúrguer artesanal com fritas e refrigerante.
           </div>
 
-          <button onclick="trackInterest('hamburguer')">
+          <button onclick="trackInterest('Hambúrguer')">
             Ver oferta
           </button>
 
@@ -383,27 +786,23 @@
 
       </div>
 
-      <div class="card" data-type="promocao">
+      <div class="card">
 
-        <div class="tag">
-          PROMOÇÃO
-        </div>
+        <div class="tag">PROMOÇÃO</div>
 
         <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1200&auto=format&fit=crop">
 
         <div class="card-content">
 
-          <h3>Espetinho na Brasa</h3>
+          <h3>Espetinho</h3>
 
-          <div class="price">
-            R$ 5,00
-          </div>
+          <div class="price">R$ 5,00</div>
 
           <div class="description">
-            Carne e frango na promoção por tempo limitado.
+            Carne e frango na promoção.
           </div>
 
-          <button onclick="trackInterest('espetinho')">
+          <button onclick="trackInterest('Espetinho')">
             Ver oferta
           </button>
 
@@ -411,28 +810,78 @@
 
       </div>
 
-      <div class="card" data-type="servico">
+      <div class="card">
 
-        <div class="tag">
-          SERVIÇO
-        </div>
+        <div class="tag">MOTO TÁXI</div>
 
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop">
 
         <div class="card-content">
 
-          <h3>Manicure Ana</h3>
+          <h3>Moto Táxi</h3>
 
           <div class="price">
-            R$ 25
+            Corridas rápidas
           </div>
 
           <div class="description">
-            Atendimento em domicílio com agendamento rápido.
+            Atendimento em toda Inhambupe.
           </div>
 
-          <button onclick="trackInterest('beleza')">
-            Ver perfil
+          <button onclick="trackInterest('Moto Táxi')">
+            Chamar
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="tag">EMPREGO</div>
+
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Vaga para Atendente</h3>
+
+          <div class="price">
+            R$ 1.450
+          </div>
+
+          <div class="description">
+            Contratação imediata.
+          </div>
+
+          <button onclick="trackInterest('Emprego')">
+            Ver vaga
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="tag">ACHADINHO</div>
+
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>iPhone XR</h3>
+
+          <div class="price">
+            R$ 1.250
+          </div>
+
+          <div class="description">
+            Semi novo e funcionando perfeitamente.
+          </div>
+
+          <button onclick="trackInterest('iPhone')">
+            Ver anúncio
           </button>
 
         </div>
@@ -445,17 +894,95 @@
 
 </section>
 
-<footer>
+<section class="creator">
 
-  <div class="container footer-content">
+  <div class="container">
+
+    <div class="creator-box">
+
+      <div class="creator-photo">
+
+        <img src="paulo.jpg" alt="Paulo Cesar">
+
+      </div>
+
+      <div class="creator-badge">
+        CRIADOR DA PLATAFORMA
+      </div>
+
+      <h2>
+        Paulo Cesar
+      </h2>
+
+      <p class="creator-description">
+
+        Especialista em Gestão Comercial com o propósito de digitalizar pequenos negócios de Inhambupe-BA.
+
+        Meu objetivo é ajudar comerciantes locais a vender mais, divulgar serviços e ganhar visibilidade na internet.
+
+      </p>
+
+      <button class="contact-btn" onclick="openChatbot()">
+        🚀 Quero divulgar meu negócio
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CHATBOT -->
+
+<div class="chatbot" id="chatbot">
+
+  <div class="chat-header">
 
     <div>
-      © 2026 Central do Povão
+      IA Central do Povão
     </div>
 
-    <div id="aiStatus">
-      IA aprendendo preferências dos usuários...
+    <button onclick="closeChatbot()">
+      ✕
+    </button>
+
+  </div>
+
+  <div class="chat-body" id="chatBody">
+
+    <div class="bot-message">
+
+      Olá 👋<br><br>
+
+      Quero ajudar você a divulgar seu negócio em Inhambupe.<br><br>
+
+      Qual o nome do seu negócio?
+
     </div>
+
+  </div>
+
+  <div class="chat-input">
+
+    <input
+    type="text"
+    id="userInput"
+    placeholder="Digite aqui..."
+    >
+
+    <button onclick="sendMessage()">
+      Enviar
+    </button>
+
+  </div>
+
+</div>
+
+<footer>
+
+  <div class="container">
+
+    © 2026 Central do Povão • Inhambupe-BA
 
   </div>
 
@@ -464,20 +991,22 @@
 <script>
 
   /*
-    ANIMAÇÃO DOS CARDS
+  ANIMAÇÃO DOS CARDS
   */
 
   const cards = document.querySelectorAll('.card');
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries)=>{
 
-    entries.forEach((entry, index) => {
+    entries.forEach((entry,index)=>{
 
       if(entry.isIntersecting){
 
-        setTimeout(() => {
+        setTimeout(()=>{
+
           entry.target.classList.add('show');
-        }, index * 140);
+
+        }, index * 120);
 
       }
 
@@ -487,16 +1016,16 @@
     threshold:0.2
   });
 
-  cards.forEach(card => {
+  cards.forEach(card=>{
     observer.observe(card);
   });
 
   /*
-    IA SIMPLES DE PREFERÊNCIAS
-    O SITE APRENDE O QUE O USUÁRIO MAIS CLICA
+  IA DE INTERESSES
   */
 
-  let interests = JSON.parse(localStorage.getItem('userInterests')) || {};
+  let interests =
+  JSON.parse(localStorage.getItem('userInterests')) || {};
 
   function trackInterest(type){
 
@@ -511,53 +1040,179 @@
       JSON.stringify(interests)
     );
 
-    updateAI();
+    updateTrending();
+
   }
 
-  function updateAI(){
+  function updateTrending(){
 
-    let favorite = Object.keys(interests).reduce((a,b) =>
-      interests[a] > interests[b] ? a : b
-    );
+    const container =
+    document.getElementById('trendingCards');
 
-    if(favorite){
+    container.innerHTML = '';
 
-      document.getElementById('aiStatus').innerHTML =
-      `IA identificou maior interesse em: <strong>${favorite}</strong>`;
+    const sorted =
+    Object.entries(interests)
+    .sort((a,b)=> b[1]-a[1]);
 
-      prioritizeCards(favorite);
+    sorted.forEach(item=>{
+
+      const div =
+      document.createElement('div');
+
+      div.className = 'trending-card';
+
+      div.innerHTML = `
+
+        <h3>${item[0]}</h3>
+
+        <p>
+          Alta procura dos usuários.
+        </p>
+
+      `;
+
+      container.appendChild(div);
+
+    });
+
+  }
+
+  updateTrending();
+
+  /*
+  CHATBOT IA
+  */
+
+  let businessData = {
+    nome:"",
+    tipo:"",
+    whatsapp:""
+  };
+
+  let step = 0;
+
+  function openChatbot(){
+
+    document.getElementById('chatbot')
+    .style.display='block';
+
+  }
+
+  function closeChatbot(){
+
+    document.getElementById('chatbot')
+    .style.display='none';
+
+  }
+
+  function addMessage(text,type){
+
+    const div =
+    document.createElement('div');
+
+    div.className = type;
+
+    div.innerHTML = text;
+
+    document.getElementById('chatBody')
+    .appendChild(div);
+
+    document.getElementById('chatBody')
+    .scrollTop =
+    document.getElementById('chatBody')
+    .scrollHeight;
+
+  }
+
+  function sendMessage(){
+
+    const input =
+    document.getElementById('userInput');
+
+    const value =
+    input.value.trim();
+
+    if(value === '') return;
+
+    addMessage(value,'user-message');
+
+    input.value='';
+
+    setTimeout(()=>{
+
+      handleAI(value);
+
+    },500);
+
+  }
+
+  function handleAI(value){
+
+    if(step === 0){
+
+      businessData.nome = value;
+
+      addMessage(
+      'Perfeito 🚀<br><br>Qual o tipo do seu negócio?',
+      'bot-message'
+      );
+
+      step++;
+
+      return;
+    }
+
+    if(step === 1){
+
+      businessData.tipo = value;
+
+      addMessage(
+      'Ótimo 👌<br><br>Qual seu WhatsApp?',
+      'bot-message'
+      );
+
+      step++;
+
+      return;
+    }
+
+    if(step === 2){
+
+      businessData.whatsapp = value;
+
+      addMessage(
+      'Finalizando cadastro...',
+      'bot-message'
+      );
+
+      setTimeout(()=>{
+
+        const text = `
+Olá Paulo, quero divulgar meu negócio na Central do Povão.
+
+🏪 Negócio: ${businessData.nome}
+
+📌 Tipo: ${businessData.tipo}
+
+📱 WhatsApp: ${businessData.whatsapp}
+`;
+
+        const url =
+`https://wa.me/5575997142719?text=${encodeURIComponent(text)}`;
+
+        window.open(url,'_blank');
+
+        addMessage(
+        'Cadastro enviado com sucesso ✅',
+        'bot-message'
+        );
+
+      },1200);
 
     }
 
   }
-
-  /*
-    IA REORGANIZA CARDS
-    BASEADO NO INTERESSE
-  */
-
-  function prioritizeCards(favorite){
-
-    const container = document.querySelector('.cards');
-
-    const allCards = [...document.querySelectorAll('.card')];
-
-    allCards.sort((a,b) => {
-
-      return (
-        b.innerHTML.includes(favorite) -
-        a.innerHTML.includes(favorite)
-      );
-
-    });
-
-    allCards.forEach(card => {
-      container.appendChild(card);
-    });
-
-  }
-
-  updateAI();
 
 </script>
 
