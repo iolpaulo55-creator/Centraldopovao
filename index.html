@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Central do Povão • Inhambupe-BA</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -20,6 +23,7 @@
     }
 
     :root{
+
       --bg:#05060a;
       --card:#10131b;
       --border:rgba(255,255,255,0.06);
@@ -27,6 +31,7 @@
       --muted:#8b93a7;
       --primary:#ff7a00;
       --secondary:#ff2d78;
+
     }
 
     body{
@@ -34,18 +39,21 @@
       font-family:'Inter',sans-serif;
 
       background:
-      radial-gradient(circle at top right, rgba(255,122,0,0.10), transparent 25%),
+      radial-gradient(circle at top right, rgba(255,122,0,0.12), transparent 25%),
       radial-gradient(circle at left, rgba(255,45,120,0.08), transparent 20%),
       var(--bg);
 
       color:var(--text);
 
       overflow-x:hidden;
+
     }
 
     .container{
+
       width:min(1200px,92%);
       margin:auto;
+
     }
 
     header{
@@ -63,6 +71,7 @@
       background:rgba(5,6,10,0.60);
 
       border-bottom:1px solid rgba(255,255,255,0.04);
+
     }
 
     .navbar{
@@ -74,6 +83,7 @@
       align-items:center;
 
       justify-content:space-between;
+
     }
 
     .logo{
@@ -88,6 +98,7 @@
       -webkit-background-clip:text;
 
       -webkit-text-fill-color:transparent;
+
     }
 
     .location{
@@ -97,6 +108,7 @@
       font-weight:600;
 
       font-size:14px;
+
     }
 
     .hero{
@@ -106,10 +118,15 @@
       display:flex;
 
       align-items:center;
+
+      padding-top:80px;
+
     }
 
     .hero-content{
+
       max-width:760px;
+
     }
 
     .badge{
@@ -135,6 +152,7 @@
       font-weight:700;
 
       backdrop-filter:blur(10px);
+
     }
 
     .hero h1{
@@ -146,6 +164,7 @@
       letter-spacing:-4px;
 
       margin-bottom:26px;
+
     }
 
     .hero h1 span{
@@ -156,6 +175,7 @@
       -webkit-background-clip:text;
 
       -webkit-text-fill-color:transparent;
+
     }
 
     .hero p{
@@ -168,70 +188,8 @@
 
       max-width:620px;
 
-      margin-bottom:55px;
-    }
+      margin-bottom:60px;
 
-    .trending{
-
-      padding:40px 0;
-    }
-
-    .trending-header{
-
-      margin-bottom:25px;
-    }
-
-    .trending-header h2{
-
-      font-size:38px;
-
-      margin-bottom:10px;
-    }
-
-    .trending-header p{
-
-      color:var(--muted);
-    }
-
-    .trending-cards{
-
-      display:flex;
-
-      gap:18px;
-
-      overflow-x:auto;
-
-      padding-bottom:10px;
-    }
-
-    .trending-card{
-
-      min-width:260px;
-
-      background:rgba(255,255,255,0.04);
-
-      border:1px solid rgba(255,255,255,0.06);
-
-      border-radius:24px;
-
-      padding:20px;
-
-      transition:0.3s;
-    }
-
-    .trending-card:hover{
-
-      transform:translateY(-5px);
-    }
-
-    .trending-card h3{
-
-      margin-bottom:10px;
-    }
-
-    .trending-card p{
-
-      color:var(--muted);
     }
 
     .cards{
@@ -243,7 +201,8 @@
 
       gap:24px;
 
-      padding-bottom:60px;
+      padding-bottom:80px;
+
     }
 
     .card{
@@ -265,6 +224,7 @@
       transform:translateY(50px);
 
       opacity:0;
+
     }
 
     .card.show{
@@ -272,16 +232,18 @@
       transform:translateY(0);
 
       opacity:1;
+
     }
 
     .card:hover{
 
       transform:translateY(-10px);
 
-      border-color:rgba(255,122,0,0.14);
+      border-color:rgba(255,122,0,0.15);
 
       box-shadow:
       0 30px 80px rgba(0,0,0,0.45);
+
     }
 
     .card img{
@@ -291,6 +253,7 @@
       height:220px;
 
       object-fit:cover;
+
     }
 
     .tag{
@@ -298,6 +261,7 @@
       position:absolute;
 
       top:18px;
+
       left:18px;
 
       padding:10px 15px;
@@ -312,11 +276,13 @@
       font-weight:800;
 
       letter-spacing:1px;
+
     }
 
     .card-content{
 
       padding:26px;
+
     }
 
     .card h3{
@@ -324,6 +290,7 @@
       font-size:28px;
 
       margin-bottom:12px;
+
     }
 
     .price{
@@ -335,6 +302,7 @@
       color:#00e676;
 
       margin-bottom:12px;
+
     }
 
     .description{
@@ -344,6 +312,7 @@
       line-height:1.7;
 
       margin-bottom:22px;
+
     }
 
     .card button{
@@ -366,16 +335,19 @@
       cursor:pointer;
 
       transition:0.3s;
+
     }
 
     .card button:hover{
 
       transform:scale(1.02);
+
     }
 
     .creator{
 
       padding:80px 0;
+
     }
 
     .creator-box{
@@ -392,6 +364,7 @@
       border-radius:36px;
 
       padding:50px;
+
     }
 
     .creator-photo{
@@ -410,6 +383,7 @@
 
       box-shadow:
       0 15px 40px rgba(0,0,0,0.35);
+
     }
 
     .creator-photo img{
@@ -419,6 +393,7 @@
       height:100%;
 
       object-fit:cover;
+
     }
 
     .creator-badge{
@@ -438,6 +413,7 @@
       font-weight:800;
 
       letter-spacing:1px;
+
     }
 
     .creator-box h2{
@@ -445,6 +421,7 @@
       font-size:52px;
 
       margin-bottom:20px;
+
     }
 
     .creator-description{
@@ -458,6 +435,7 @@
       margin-bottom:35px;
 
       font-size:18px;
+
     }
 
     .contact-btn{
@@ -484,11 +462,13 @@
       cursor:pointer;
 
       transition:0.3s;
+
     }
 
     .contact-btn:hover{
 
       transform:scale(1.03);
+
     }
 
     .chatbot{
@@ -514,6 +494,7 @@
 
       box-shadow:
       0 30px 80px rgba(0,0,0,0.45);
+
     }
 
     .chat-header{
@@ -531,6 +512,7 @@
       border-bottom:1px solid rgba(255,255,255,0.06);
 
       font-weight:800;
+
     }
 
     .chat-header button{
@@ -544,6 +526,7 @@
       font-size:18px;
 
       cursor:pointer;
+
     }
 
     .chat-body{
@@ -559,6 +542,7 @@
       flex-direction:column;
 
       gap:15px;
+
     }
 
     .bot-message,
@@ -571,6 +555,7 @@
       line-height:1.6;
 
       max-width:85%;
+
     }
 
     .bot-message{
@@ -578,6 +563,7 @@
       background:rgba(255,255,255,0.05);
 
       align-self:flex-start;
+
     }
 
     .user-message{
@@ -590,6 +576,7 @@
       );
 
       align-self:flex-end;
+
     }
 
     .chat-input{
@@ -601,6 +588,7 @@
       padding:15px;
 
       border-top:1px solid rgba(255,255,255,0.06);
+
     }
 
     .chat-input input{
@@ -620,6 +608,7 @@
       padding:0 15px;
 
       color:white;
+
     }
 
     .chat-input button{
@@ -642,6 +631,7 @@
       font-weight:700;
 
       cursor:pointer;
+
     }
 
     footer{
@@ -651,6 +641,9 @@
       padding:35px 0;
 
       color:var(--muted);
+
+      text-align:center;
+
     }
 
     @media(max-width:600px){
@@ -660,16 +653,21 @@
         min-height:auto;
 
         padding:120px 0 70px;
+
       }
 
       .hero h1{
 
         font-size:48px;
+
+        letter-spacing:-2px;
+
       }
 
       .hero p{
 
         font-size:17px;
+
       }
 
       .chatbot{
@@ -677,16 +675,19 @@
         width:92%;
 
         right:4%;
+
       }
 
       .creator-box{
 
         padding:35px;
+
       }
 
       .creator-box h2{
 
         font-size:38px;
+
       }
 
     }
@@ -694,6 +695,7 @@
   </style>
 
 </head>
+
 <body>
 
 <header>
@@ -725,30 +727,8 @@
     </h1>
 
     <p>
-      Promoções, delivery e oportunidades locais em uma plataforma moderna, inteligente e feita para Inhambupe-BA.
+      Promoções, delivery, empregos, serviços e oportunidades locais em uma plataforma moderna feita para Inhambupe-BA.
     </p>
-
-  </div>
-
-</section>
-
-<section class="trending">
-
-  <div class="container">
-
-    <div class="trending-header">
-
-      <h2>
-        🔥 Mais acessados em Inhambupe
-      </h2>
-
-      <p>
-        O algoritmo aprende automaticamente com os usuários.
-      </p>
-
-    </div>
-
-    <div class="trending-cards" id="trendingCards"></div>
 
   </div>
 
@@ -760,11 +740,11 @@
 
     <div class="cards">
 
-      <!-- CARDS -->
-
       <div class="card">
 
-        <div class="tag">DELIVERY</div>
+        <div class="tag">
+          DELIVERY
+        </div>
 
         <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
 
@@ -772,7 +752,9 @@
 
           <h3>Brasa Burguer</h3>
 
-          <div class="price">R$ 9,99</div>
+          <div class="price">
+            R$ 9,99
+          </div>
 
           <div class="description">
             Hambúrguer artesanal com fritas e refrigerante.
@@ -788,7 +770,9 @@
 
       <div class="card">
 
-        <div class="tag">PROMOÇÃO</div>
+        <div class="tag">
+          PROMOÇÃO
+        </div>
 
         <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1200&auto=format&fit=crop">
 
@@ -796,7 +780,9 @@
 
           <h3>Espetinho</h3>
 
-          <div class="price">R$ 5,00</div>
+          <div class="price">
+            R$ 5,00
+          </div>
 
           <div class="description">
             Carne e frango na promoção.
@@ -812,7 +798,9 @@
 
       <div class="card">
 
-        <div class="tag">MOTO TÁXI</div>
+        <div class="tag">
+          MOTO TÁXI
+        </div>
 
         <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop">
 
@@ -838,7 +826,9 @@
 
       <div class="card">
 
-        <div class="tag">EMPREGO</div>
+        <div class="tag">
+          EMPREGO
+        </div>
 
         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop">
 
@@ -864,7 +854,9 @@
 
       <div class="card">
 
-        <div class="tag">ACHADINHO</div>
+        <div class="tag">
+          ACHADINHO
+        </div>
 
         <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop">
 
@@ -931,8 +923,6 @@
   </div>
 
 </section>
-
-<!-- CHATBOT -->
 
 <div class="chatbot" id="chatbot">
 
@@ -1040,45 +1030,7 @@
       JSON.stringify(interests)
     );
 
-    updateTrending();
-
   }
-
-  function updateTrending(){
-
-    const container =
-    document.getElementById('trendingCards');
-
-    container.innerHTML = '';
-
-    const sorted =
-    Object.entries(interests)
-    .sort((a,b)=> b[1]-a[1]);
-
-    sorted.forEach(item=>{
-
-      const div =
-      document.createElement('div');
-
-      div.className = 'trending-card';
-
-      div.innerHTML = `
-
-        <h3>${item[0]}</h3>
-
-        <p>
-          Alta procura dos usuários.
-        </p>
-
-      `;
-
-      container.appendChild(div);
-
-    });
-
-  }
-
-  updateTrending();
 
   /*
   CHATBOT IA
